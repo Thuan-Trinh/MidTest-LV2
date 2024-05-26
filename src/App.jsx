@@ -56,6 +56,7 @@ const App = () => {
     setShowMovieCard(true);
     setShowList(false);
     setShowMovieDetail(false);
+    document.title = "Anonime - Home";
   }
 
   //function handle show list anime
@@ -64,6 +65,7 @@ const App = () => {
     setShowMovieCard(false);
     setShowMovieDetail(false);
     setShowList(true);
+    document.title='Anonime - List Anime';
   }
   //components
   return (
