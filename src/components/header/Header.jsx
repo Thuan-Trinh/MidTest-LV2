@@ -16,7 +16,7 @@ const Header = ({ children, home, list, handleBackToHome, handleShowListCards })
     return (
         <header>
             <div className="header-left">
-                <span className="logoName">Anonime</span>
+                <span className="logoName" onClick={() => handleMenuClick('home')}>Anonime</span>
                 <nav>
                     <ul>
                         <li
