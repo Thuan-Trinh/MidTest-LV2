@@ -109,9 +109,7 @@ const App = () => {
                 <MovieCard
                   key={card.id}
                   handleOpenDetail={() => handleClickCard(card)}
-                  image={card.image}
-                  movieName={card.movieName}
-                  episode={card.episode}
+                  {...card}
                 />
               )))}
           </div>
@@ -127,9 +125,7 @@ const App = () => {
               <MovieCard
                 key={card.id}
                 handleOpenDetail={() => handleClickCard(card)}
-                image={card.image}
-                movieName={card.movieName}
-                episode={card.episode}
+                {...card}
               />
             )))
           }
@@ -139,16 +135,7 @@ const App = () => {
       {/* Movie detail */}
       {showMovieDetail && selectedCard &&
         <MovieDetail
-          movieName={selectedCard.movieName}
-          episode={selectedCard.episode}
-          image={selectedCard.image}
-          video={selectedCard.video}
-          description={selectedCard.description}
-          type={selectedCard.type}
-          status={selectedCard.status}
-          studios={selectedCard.studios}
-          duration={selectedCard.duration}
-          genres={selectedCard.genres}
+        {...selectedCard}
         />
       }
     </>
