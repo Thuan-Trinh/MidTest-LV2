@@ -1,0 +1,89 @@
+header {
+    position: sticky;
+    top: 0;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 80px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    z-index: 3;
+    background: #192026;
+}
+
+header .header-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 90px;
+    align-items: center;
+}
+
+header .header-left .logoName {
+    color: #FFF;
+    font-family: "Mulish";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 88.889% */
+    letter-spacing: 2.52px;
+    cursor: pointer;
+}
+
+header .header-left nav ul {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header .header-left nav ul li {
+    color: #868686;
+    font-family: "Mulish";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 177.778% */
+    letter-spacing: 1.26px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+header .header-left nav ul li:hover {
+    color: white;
+}
+header .header-left nav ul li.active{
+    color: white;
+}
+header input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    border-radius: 37px;
+    background: #374151;
+    border: none;
+    width: 30%;
+    color: white;
+    font-family: "Mulish";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    outline: #868686;
+}
+
+header input::placeholder {
+    color: #868686;
+    font-family: "Mulish";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 177.778% */
+    letter-spacing: 1.26px;
+}

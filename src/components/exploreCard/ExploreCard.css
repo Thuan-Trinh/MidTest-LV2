@@ -1,0 +1,91 @@
+.exploreCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+}
+.exploreCardContainer.container{
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 8px;
+}
+
+.exploreCard {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+
+}
+
+.exploreCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(29, 29, 29, 0.00) 0.04%, rgba(29, 29, 29, 0.80) 99.5%);
+    z-index: 1;
+}
+
+.exploreCard .exploreMovieImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.exploreCard .exploreMovieImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exploreCard .movieTitle {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+    width: 60%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.exploreCard .exploreMovieName {
+    color: #FFF;
+    font-family: "Mulish";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    width: 100%;
+    /* 177.778% */
+}
+
+.exploreCard .exploreMovieDiscription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    /* Số dòng muốn giới hạn */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #fff;
+    font-family: "Mulish";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    /* 168.75% */
+}
