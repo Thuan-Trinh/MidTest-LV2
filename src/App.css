@@ -17,6 +17,9 @@
 
 
 .listCards {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,7 +31,7 @@
 }
 
 .listCards .movieCard {
-  width: calc(100%/6 - 30px);
+  width: calc(100%/6 - 25px);
 }
 
 h2 {
